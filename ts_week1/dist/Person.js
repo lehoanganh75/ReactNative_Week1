@@ -1,7 +1,12 @@
 "use strict";
-let ten = "Le Hoang Anh";
-let age = 21;
-function displayInformation(ten, age) {
-    return `Xin chao ${ten} voi so tuoi la ${age} tuoi.`;
+class Person {
+    constructor(ten, age) {
+        this.ten = ten;
+        this.age = age;
+    }
+    displayInfo() {
+        console.log(`Xin chao: ${this.ten}, tuoi cua ban: ${this.age} tuoi.`);
+    }
 }
-console.log(displayInformation(ten, age));
+const person = new Person("Lê Hoàng Anh", 21);
+person.displayInfo();

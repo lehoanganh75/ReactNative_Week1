@@ -1,12 +1,16 @@
-let ten: string = "Le Hoang Anh";
-let age = 21;
+class Person {
+    ten:string;
+    age:number;
 
-function displayInformation(ten: string, age: number): string {
-    return `Xin chao ${ten} voi so tuoi la ${age} tuoi.`;
+    constructor(ten:string, age:number) {
+        this.ten = ten;
+        this.age = age;
+    }
+
+    displayInfo(): void {
+        console.log(`Xin chao: ${this.ten}, tuoi cua ban: ${this.age} tuoi.`);
+    }
 }
 
-console.log(displayInformation(ten, age));
-
-
-
-
+const person = new Person("Le Hoang Anh", 21);
+person.displayInfo();
