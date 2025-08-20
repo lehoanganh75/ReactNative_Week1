@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Person = void 0;
 class Person {
     constructor(ten, age) {
         this.ten = ten;
@@ -8,5 +10,6 @@ class Person {
         console.log(`Xin chao: ${this.ten}, tuoi cua ban: ${this.age} tuoi.`);
     }
 }
-const person = new Person("Lê Hoàng Anh", 21);
-person.displayInfo();
+exports.Person = Person;
+// const person = new Person("Le Hoang Anh", 21);
+// person.displayInfo();

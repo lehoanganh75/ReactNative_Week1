@@ -1,4 +1,4 @@
-class Person {
+export class Person {
     ten:string;
     age:number;
 
@@ -12,5 +12,5 @@ class Person {
     }
 }
 
-const person = new Person("Le Hoang Anh", 21);
-person.displayInfo();
+// const person = new Person("Le Hoang Anh", 21);
+// person.displayInfo();
