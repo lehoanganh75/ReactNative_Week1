@@ -1,5 +1,9 @@
 export class Animal2 {
-    speak(): void {
-        console.log("Am thanh cua dong vat:");
-    }
+  protected makeSound(): string {
+    return "Am thanh chung";
+  }
+
+  speak(): void {
+    console.log("Am thanh cua dong vat:");
+  }
 }

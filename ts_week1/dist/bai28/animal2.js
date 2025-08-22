@@ -3,10 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Animal2 = void 0;
 class Animal2 {
     makeSound() {
-        return "Am thanh chung";
+        return "Some generic sound";
     }
     speak() {
-        console.log("Am thanh cua dong vat:");
+        console.log(this.makeSound());
     }
 }
 exports.Animal2 = Animal2;
