@@ -1,0 +1,3 @@
+interface Movable {
+    move(): void;
+}
