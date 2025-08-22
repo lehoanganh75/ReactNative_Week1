@@ -1,15 +1,18 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const person_1 = require("./person");
-class Student extends person_1.Person {
-    constructor(ten, age, grade) {
+import { Person } from '../bai1/person';
+
+class Student extends Person {
+    grade:number;
+
+    constructor(ten:string, age:number, grade:number) {
         super(ten, age);
         this.grade = grade;
     }
-    displayAllInfo() {
+
+    displayAllInfo(): void {
         this.displayInfo();
         console.log(`Diem cua ban la: ${this.grade} diem`);
     }
 }
+
 const student = new Student("Le Hoang Anh", 21, 9);
 student.displayAllInfo();
